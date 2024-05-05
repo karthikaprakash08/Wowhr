@@ -1,0 +1,590 @@
+
+/* ========================Start Button css style ========================*/
+
+.rightcontainer button{
+    background-color: #00A2E0;
+    font-weight: 700;
+    padding:15px 20px;
+    color: white;
+    border: none;   
+}
+
+.rightcontainer button:hover{
+    scale: 1.1;
+    background: rgb(0, 153, 255);
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width:576px) {
+    .rightcontainer{
+        margin-top:3rem;
+    }
+}
+
+/* ====================== End ========================*/
+
+
+/* ====================== Start Certificate css style ========================*/
+
+.leftcontainer{
+   margin-top:1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.certificate{
+    background: url('./Assets/bg.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius:5px;
+    height:550px;
+    width:1000px;
+}
+
+.ribbon{
+    position: relative;
+    top:70px;
+    left:325px;
+    height:70px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:370px;
+    left: 670px;
+}
+
+.links a{
+    color:white;
+    font-size:25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: blue;
+    text-decoration: none;
+}
+
+/*font*/
+
+.socialmedia{
+    display: flex;
+    height: fit-content;
+    gap: 10px;
+}
+
+.socialmedia .icons{
+    display: flex;
+    background: white;
+    gap:5px;
+    height: 40px;
+    padding: 2.5px 5px;
+}
+
+.socialmedia h2{
+    color: white;
+    font-size: 25px;
+}
+
+
+/*names container*/
+
+.namecontainer{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:-18rem;
+    left: 350px;
+}
+
+.namecontainer .name{
+    text-transform: capitalize;
+    background: transparent;
+}
+
+
+.name b{
+    font-family:sans-serif;
+    font-weight: bolder;
+}
+
+.name .designation{
+   width:100%;
+   background: transparent;
+   font-size: 18px;
+   padding-bottom: 5px;
+   border-bottom: 3px solid  rgb(24, 119, 24); 
+   margin: 0px;
+   max-width: 400px;
+}
+
+.dpcontainer{
+    position: relative;
+    left: 25px;
+    top: -4rem;
+    border-radius: 15px;
+    overflow:hidden;
+    margin:10px;
+}
+
+.dpcontainer img{
+    width: 280px; 
+    height:280px; 
+    border-radius:50%;
+    object-fit: cover; 
+}
+
+/*linkedin data style css*/
+
+.linkedin-logo-small {
+    width:30px;
+    height:30px;
+}
+.linkedin{
+    margin: 0px;
+}
+
+/* ====================== End ========================*/
+
+
+
+/* ====================== MEDIA QURIES (MEDIUM DEVICES) ======================== */
+
+@media screen and (max-width:1024px) {
+    
+    .certificate{
+        height: 400px;
+        width: 750px;
+        overflow: hidden;  
+    }
+
+    .ribbon{
+        left:270px;
+        margin-top:-20px;
+        height: 50px;
+    }
+
+    .dpcontainer{
+        top: -2rem;
+    }
+
+    .dpcontainer img {
+        width:220px; 
+        height:220px; 
+    }
+
+
+    .links{
+        top:300px;
+        left:530px;
+    }
+
+    .links a{
+        font-size:15px;
+    }
+    .icons svg{
+        font-size:20px !important;
+    }
+
+    .socialmedia .icons{
+        height: fit-content;
+        width: max-content;
+    }
+    .socialmedia h2{
+        font-size:15px;
+    }
+
+    /*names container*/
+
+    .namecontainer{
+        top:-13rem;
+        left:280px;
+    }
+
+    .namecontainer p{
+        font-size:10px;
+    }
+
+    .name b{
+        font-size:16px;
+    }
+
+    .name .designation{
+        font-size:14px; 
+        max-width: 270px;
+    }
+    
+    
+    .linkedin { 
+        padding: 5px 0px 5px 0;
+    }
+
+ }
+
+ /* ====================== End ========================*/
+
+
+
+ /* ====================== MEDIA QURIES (MEDIUM DEVICES) ======================== */
+
+ @media screen and (max-width:772px) {
+    
+    .certificate{
+        height:350px;
+        width: 660px;
+        overflow: hidden;  
+    }
+
+    .ribbon{
+        left:240px;
+        margin-top:-50px;
+        height:45px;
+    }
+
+    .dpcontainer{
+        top: -1.5rem;
+    }
+
+    .dpcontainer img {
+        width:180px; 
+        height:180px; 
+    }
+
+
+    .links{
+        top:264px;
+        left:470px;
+    }
+
+    .links a{
+        font-size:14px;
+    }
+    .icons svg{
+        font-size:18px !important;
+    }
+
+    .socialmedia .icons{
+        height: fit-content;
+        width: max-content;
+    }
+    .socialmedia h2{
+        font-size:14px;
+    }
+
+    /*names container*/
+
+    .namecontainer{
+        top:-12rem;
+        left:15rem;
+    }
+
+    .namecontainer .name{
+        font-size:5px;
+    }
+
+    .name b{
+        font-size:14px;
+    }
+
+    .name .designation{
+        font-size:12px; 
+        max-width: 260px;
+    }
+
+    .linkedin { 
+        padding: 5px 0px 5px 0;
+    }
+}
+
+/* ====================== End ========================*/
+
+
+@media screen and (max-width:660px) {
+    .certificate{
+        height:330px;
+        width:590px;
+    }
+
+    .ribbon{
+        left:210px;
+        margin-top:-50px;
+        height:40px;
+    }
+
+    .dpcontainer{
+        top: -1rem;
+    }
+
+    .dpcontainer img {
+        width:150px; 
+        height:150px; 
+    }
+
+
+    .links{
+        top:240px;
+        left:400px;
+    }
+
+    .links a{
+        font-size:13px;
+    }
+    .icons svg{
+        font-size:15px !important;
+    }
+
+    .socialmedia .icons{
+        height: fit-content;
+        width: max-content;
+    }
+    .socialmedia h2{
+        font-size:13px;
+    }
+
+    /*names container*/
+
+    .namecontainer{
+        top:-10rem;
+        left:13rem;
+    }
+
+    .namecontainer .name{
+        font-size:5px;
+    }
+
+    .name b{
+        font-size:13px;
+    }
+
+    .name .designation{
+        font-size:13px; 
+        max-width: 220px;
+    }
+
+    .linkedin-logo-small{
+        width:30px;
+        height:30px; 
+    }
+
+    .linkedin { 
+        bottom:10px;
+        left: 2px;
+    }
+}
+
+
+
+/* ====================== End ========================*/
+
+
+ /* ====================== MEDIA QURIES (MEDIUM DEVICES) ========================*/
+ @media screen and (max-width:600px) {
+    .certificate{
+        height: 250px;
+        width: 450px;
+        margin-top: 20px;
+    }
+
+    .ribbon{
+        left:150px;
+        margin-top:-80px;
+        height:30px;
+    }
+
+    .dpcontainer{
+        top:-1.5rem; 
+    }
+
+    .dpcontainer img {
+        width:110px; 
+        height:110px; 
+    }
+
+    .links{
+        top:180px;
+        left:300px;
+    }
+
+    .links a{
+        font-size:10px;
+    }
+    .icons svg{
+        font-size:13px !important;
+    }
+
+    .socialmedia .icons{
+        height: fit-content;
+        width: max-content;
+    }
+    .socialmedia h2{
+        font-size:10px;
+    }
+
+    /*names container*/
+
+    .namecontainer{
+        top:-8.5rem;
+        left:155px;
+    }
+
+
+    .name b{
+        font-size:10px;
+    }
+
+    .name .designation{
+        font-size:10px;
+        top:-15px;
+        max-width: 170px; 
+    }
+
+
+    .linkedin-logo-small{
+        width:20px;
+        height:20px; 
+    }
+
+    .linkedin { 
+        bottom:14px;
+        left: 2px;
+    }
+   
+ }
+/* ====================== End ========================*/
+
+ /* ====================== SMALL QURIES (MEDIUM DEVICES) ========================*/
+@media screen and (max-width:460px) {
+    .certificate{
+        height:220px;
+        width:400px;
+    }
+    .ribbon{
+        left: 120px;
+        height: 30px;
+    }
+    .dpcontainer{
+         top: -1rem;
+         left: 10px;
+    }
+    .dpcontainer img{
+        height:100px;
+        width: 100px;
+    }
+
+    .links{
+        top:160px;
+        left:270px;
+    }
+
+    .links a{
+        font-size: 8px;
+    }
+
+    .icons svg{
+        font-size: 8px !important;
+    }
+
+    .namecontainer{
+         top: -7rem;
+         left: 8.5rem;
+         gap:0px;
+    }
+
+    .namecontainer p{
+        font-size:7px !important;
+    }
+     
+    .namecontainer .name{
+         font-size: 12px !important;
+    }
+    
+    .linkedin-logo-small {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .linkedin { 
+        bottom:11px;
+        left: 2px;
+    }
+    .name .designation{
+        max-width: 150px; 
+    }
+}
+ 
+/* ====================== End ========================*/
+
+ /* ====================== SMALL QURIES (MEDIUM DEVICES) ========================*/
+ @media screen and (max-width:400px) {
+    .certificate{
+        height:190px;
+        width: 340px;
+
+    }
+    .ribbon{
+        left: 100px;
+        margin-bottom:30px;
+        height:22px;
+    }
+    .dpcontainer{
+         top: -2rem;
+         left: 10px;
+     }
+    .dpcontainer img{
+        height:75px;
+        width:75px;
+    }
+
+    .links{
+        top:133px;
+        left:220px;
+    }
+     .links a{
+        font-size: 7px;
+     }
+     .icons svg{
+        font-size:7px !important;
+     }
+
+     /*names container*/
+
+    .namecontainer{
+         left:6.5rem ;
+         top:-6.5rem;
+         gap:0px;
+    }
+
+    .namecontainer .name{
+        font-size:5px;
+    }
+
+    .name b{
+        font-size:9px;
+    }
+
+    .name .designation{
+        font-size:6px; 
+    }
+    
+     
+    
+    .linkedin-logo-small {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .linkedin { 
+        bottom:11px;
+        left: 2px;
+    }
+    .name .designation{
+        max-width: 130px; 
+    }
+}
+ 
+/* ====================== End ========================*/

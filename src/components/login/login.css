@@ -1,0 +1,150 @@
+
+
+.loginformcontainer1{
+  background: url('../../../public/images/Untitled design.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+
+.card_design {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 10px;
+  width: 80%;
+  max-height: 600px; /* Set a maximum height for the card */
+  overflow-y: auto; /* Add a scrollbar when content exceeds the maximum height */
+}
+
+.card_design_2{
+  margin-top:3rem !important;
+}
+
+.card_design:hover{
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+}
+
+.card_design div label {
+  display: block;
+  font-weight: bold;
+  color: #000b12;
+  margin-bottom: 2px;
+}
+
+
+.phone-input-input {
+  width: calc(100% - 40px) !important;
+  margin-left:40px;
+  border-radius:0px 10px 10px 0px !important;
+}
+
+
+.card_design div input {
+  width: 100%;
+  padding: 10px 0px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.card_design div span {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
+
+.image_text {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+}
+
+.card_design button {
+  background-color: #2bbee3;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition:background-color 0.3s;
+}
+
+.card_desig button:hover {
+  background-color: #ffffff;
+  color: #000b12;
+}
+
+
+.h1login {
+  color: #000b12;
+}
+
+.submit{
+  color: #000000;
+  font-weight: 700;
+  border-bottom: 40px;
+  border-radius: 5px;
+}
+
+.designation-style {
+  border: 1px solid white;
+}
+
+.image-style {
+  border: 1px solid white;
+}
+
+.url-style {
+  border: 1px solid white;
+}
+
+.name-style {
+  border: 1px solid white;
+}
+
+.image-drop {
+  border-radius: 10px;
+  background-color: #2bbee3;
+}
+
+@media (max-width:962px) {
+  .loginformcontainer1{
+    background: url('../../../public/images/Untitled design.png');
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+    .card_design {
+    margin-top:37rem !important;
+    }
+}
+
+@media (max-width:768px) {
+  .loginformcontainer1{
+    background: url('../../../public/images/Untitled design.png');
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+    .card_design {
+    margin-top:35rem !important;
+    }
+}
+
+
+@media (max-width:576px) {
+  .loginformcontainer1{
+    background: url('../../../public/images/Untitled design.png');
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+  .card_design {
+    margin-top:22rem !important;
+  }
+}

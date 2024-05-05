@@ -1,0 +1,238 @@
+.admin-container{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #dfe9f5;
+}
+.admin-container nav{
+  display: block;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: #fff;
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.smallnav{
+  display: none;
+  width: 100%;
+}
+.admin-container nav ul{
+    list-style: none;
+}
+.admin-container nav ul li a{
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 20px;
+  width: 280px;
+  padding: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.admin-container nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+.admin-container nav ul li a a:hover{
+  background: #eee;
+}
+.admin-container nav ul .logout{
+  position: absolute;
+  bottom: 20px;
+}
+
+/* Main Section */
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  overflow: scroll;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+.main::-webkit-scrollbar {
+  display: none;
+}
+.main {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.main .container::-webkit-scrollbar {
+  display: none;
+}
+.main .container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.main .dashboard, .main .container, .main .students{
+  background: white;
+  min-height: calc(100vh - 40px);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.containerHeader{
+  display:flex;
+  width:100%;
+  justify-content:flex-end;
+  align-items:center;
+  height:60px;
+}
+.containerHeader .button{
+  border:none;
+  color:white;
+  background:blue;
+  border-radius:5px;
+  padding:5px 20px;
+}
+.container td{
+  border: 2px solid white;
+}
+.container table{
+  width:100%;
+}
+.container table thead{
+  background:rgb(0, 200, 255);
+}
+.container table{
+  background:linen;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container table th{
+  padding:10px 0px;
+  text-align: center;
+}
+.container table td,.container table th{
+  padding:10px 5px;
+}
+.container table tr td p{
+  max-width: 105px;
+  word-wrap: break-word;
+  white-space:pre-wrap;
+}
+tr:hover{
+  background: rgb(255, 212, 169);
+}
+
+
+/* admin login css */
+
+
+.adminlogin{
+  background: #c3e7f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.adminlogin form{
+  height: max-content;
+  width: 40%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 300px;
+}
+.adminlogin form h3{
+  width: 100%;
+  text-align: center;
+}
+
+.adminlogin form label {
+  display: block;
+  font-weight: bold;
+  color: #000b12;
+  margin-bottom: 2px;
+}
+.adminlogin form input {
+  width: 100%;
+  padding: 10px 0px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+.adminlogin form span {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
+.adminlogin form button {
+  background-color: #2bbee3;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition:background-color 0.3s;
+}
+
+.adminlogin form button:hover {
+  background-color: #ffffff;
+  color: #000b12;
+}
+/* Responsive css */
+
+@media (max-width:1024px) {
+  .container{
+    max-width: 100%;
+  }
+  .admin-container{
+    flex-direction: column;
+  }
+  .admin-container nav{
+    width: 100%;
+    height: fit-content;
+  }
+  .admin-container nav ul{
+    display: flex;
+  }
+  .admin-container nav ul li{
+    width: 190px;
+  }
+  .admin-container nav ul .logout{
+    position: static;
+  }
+}
+
+@media (max-width:962px) {
+  .container{
+    overflow: scroll;
+  }
+  .containerHeader h5{
+    font-size: 16px;
+  }
+  .admin-container nav{
+    display: none;
+    width: fit-content;
+    position: absolute;
+    right: 0%;
+    top: 60px;
+    z-index: 99;
+  }
+  .admin-container nav ul{
+    flex-direction: column;
+    height: 500px;
+  }
+  .admin-container .smallnav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+}
